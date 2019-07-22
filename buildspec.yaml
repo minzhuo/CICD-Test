@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Entered the install phase (install Nginx for testing)
+      - apt-get update -y
+      - apt-get install -y nginx
+  pre_build:
+    commands:
+      - cd CICD-Test
+      - pwd
+  build:
+    commands:
+      - echo Entered the build phase...
+      - echo Build started on `date`
+      - echo Test started
+      - nginx -v
+  post_build:
+    commands:
+      - echo Build completed on `date`
