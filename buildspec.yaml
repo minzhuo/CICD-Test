@@ -10,8 +10,8 @@ phases:
       - apt-get install -y nginx
   pre_build:
     commands:
-      - cd CICD-Test
       - pwd
+      - cd CICD-Test
   build:
     commands:
       - echo "Entered the build phase...""
