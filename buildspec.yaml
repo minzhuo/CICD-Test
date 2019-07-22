@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       python: 3.7
     commands:
-      - echo Entered the install phase (install Nginx for testing)
+      - echo "Entered the install phase (install Nginx for testing)"
       - apt-get update -y
       - apt-get install -y nginx
   pre_build:
@@ -14,9 +14,9 @@ phases:
       - pwd
   build:
     commands:
-      - echo Entered the build phase...
-      - echo Build started on `date`
-      - echo Test started
+      - echo "Entered the build phase...""
+      - echo "Build started on `date`"
+      - echo "Test started"
       - nginx -v
   post_build:
     commands:
