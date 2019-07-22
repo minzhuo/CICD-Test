@@ -14,10 +14,10 @@ phases:
       - echo "May cd into each sub folder for each environment."
   build:
     commands:
-      - echo "Entered the build phase...""
+      - echo "Entered the build phase..."
       - echo "Build started on `date`"
       - echo "Test started"
       - nginx -v
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo "Build completed on `date`"
