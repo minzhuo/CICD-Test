@@ -8,7 +8,7 @@ set -eo pipefail
 ### function ###
 function main() {
 	nginx -t
-	service nginx reload	
+	#service nginx reload	
 }
 
 

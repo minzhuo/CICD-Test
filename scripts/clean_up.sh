@@ -33,7 +33,7 @@ function backup() {
 }
 
 function main() {
-	service nginx stop
+	#service nginx stop
 	backup
 	clean_old_config
 }
