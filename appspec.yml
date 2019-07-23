@@ -4,11 +4,11 @@ files:
   - source: nginx_qa
     destination: /etc/nginx/sites-available
 hooks:
-   BeforeInstall
-     - location: scripts/clean_up.sh
-       timeout: 30
-       runas: root
-   ApplicationStart
-     - location: scripts/service_restart.sh
-       timeout: 30
-       runas: root
+  BeforeInstall:
+    - location: scripts/clean_up.sh
+      timeout: 30
+      runas: root
+  ApplicationStart:
+    - location: scripts/service_restart.sh
+      timeout: 30
+      runas: root
