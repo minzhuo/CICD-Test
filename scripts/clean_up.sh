@@ -33,7 +33,7 @@ function backup() {
 }
 
 function main() {
-	systemctl quit nginx
+	service nginx stop
 	backup
 	clean_old_config
 }
