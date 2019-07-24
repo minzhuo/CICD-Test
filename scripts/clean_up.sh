@@ -19,9 +19,9 @@ function clean_old_config() {
 function backup() {
 	if [[ -d "/home/nginx_backup" ]]; then	
 		rm -rf /home/nginx_backup
-	else
-		mkdir /home/nginx_backup
 	fi
+
+	mkdir /home/nginx_backup
 
 	if [[ -d "/etc/nginx/sites-available/upstream" ]]; then	
 		cp -rf /etc/nginx/sites-available/upstream /home/nginx_backup/upstream
