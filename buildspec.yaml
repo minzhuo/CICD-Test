@@ -24,6 +24,6 @@ phases:
 
 artifacts:
   files:
-    - **/*
+    - '**/*'
   base-directory: nginx_qa
   name: nginx-$(date +%Y-%m-%d-%H-%M-%S).zip
