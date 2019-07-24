@@ -21,3 +21,8 @@ phases:
   post_build:
     commands:
       - echo "Build completed on `date`"
+
+artifacts:
+  files:
+    - src/*
+  name: nginx-$(date +%Y-%m-%d-%H-%M-%S).zip
