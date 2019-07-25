@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: nginx_qa
+  - source: prod
     destination: /etc/nginx/sites-available
 hooks:
   BeforeInstall:
